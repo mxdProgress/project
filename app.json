@@ -4,7 +4,9 @@
         "pages/cotegoary/index",
         "pages/cart/index",
         "pages/user/index",
-        "pages/search/index" 
+        "pages/search/index",
+        "pages/goods_detail/main"
+
     ],
     "window": {
         "backgroundTextStyle": "light",
