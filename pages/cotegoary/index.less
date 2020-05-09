@@ -1,0 +1,51 @@
+page{
+    height: 100%;
+}
+.view_box{
+    height: 100%;
+}
+.cates_container{
+    display: flex;
+    height: ~'calc(100vh - 90rpx)';
+    .leftMenu_list{
+        flex: 1;
+        height: 100%;
+        .menu{
+            height: 80rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30rpx;
+        }
+        .active{
+            color: var(--themeColor);
+            border-left: 5rpx solid currentColor;
+        }
+    }
+    .right_continer{
+        flex: 2;
+        .good_group{
+            .good_title{
+                width:100%;
+                text-align: center;
+                margin-top:30rpx;
+                margin-bottom:20rpx;
+
+            }
+            .good_list{
+                display: flex;
+                flex-wrap: wrap;
+                navigator{
+                    width:33.3%;
+                    image{
+                        padding:0 20rpx;
+                    }
+                    .good_name{
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,2 +1,18 @@
-<!--pages/goods_detail/main.wxml-->
-<text>pages/goods_detail/main.wxml</text>
+<view class="detail_group" >
+    <swiper indicator-dots   circular interval="2500">
+        <swiper-item wx:for="{{goodsObj.pics}}" wx:key="pics_id" bindtap="previewImage" data-index="{{index}}">
+            <image mode="widthFix" src="{{item.pics_mid}}" />
+        </swiper-item>
+    </swiper>
+
+    <view class="goods_price">￥ {{goodsObj.goods_price}}</view>
+    <view class="goods_name_group">
+        <view class="goods_title">{{goodsObj.goods_name}}</view>
+        <view class="shoucang">
+            <view class="iconfont icon-shoucang"></view>
+            <text>收藏</text>
+        </view>
+    </view>
+    <view class="goods_details">图片详情</view>
+    <rich-text class="" nodes="{{goodsObj.goods_introduce}}"></rich-text>
+</view>

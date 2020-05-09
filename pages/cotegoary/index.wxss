@@ -1,1 +1,47 @@
-/* pages/cotegoary/index.wxss */
+page {
+  height: 100%;
+}
+.view_box {
+  height: 100%;
+}
+.cates_container {
+  display: flex;
+  height: calc(100vh - 90rpx);
+}
+.cates_container .leftMenu_list {
+  flex: 1;
+  height: 100%;
+}
+.cates_container .leftMenu_list .menu {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.cates_container .leftMenu_list .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cates_container .right_continer {
+  flex: 2;
+}
+.cates_container .right_continer .good_group .good_title {
+  width: 100%;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+.cates_container .right_continer .good_group .good_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cates_container .right_continer .good_group .good_list navigator {
+  width: 33.3%;
+}
+.cates_container .right_continer .good_group .good_list navigator image {
+  padding: 0 20rpx;
+}
+.cates_container .right_continer .good_group .good_list navigator .good_name {
+  text-align: center;
+}

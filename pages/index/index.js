@@ -26,21 +26,21 @@
       * 获取首页轮播图代码
       */
      getSwiperList() {
-         request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata' }).then(res => {
+         request({ url: 'home/swiperdata' }).then(res => {
              this.setData({
                  swiperList: res.data.message
              })
          }).catch(err => {});
      },
      getCatesList() {
-         request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems' }).then(res => {
+         request({ url: 'home/catitems' }).then(res => {
              this.setData({
                  catesList: res.data.message
              })
          }).catch(err => {});
      },
      getFloorList() {
-         request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata' }).then(res => {
+         request({ url: 'home/floordata' }).then(res => {
              this.setData({
                  floorList: res.data.message
              })
